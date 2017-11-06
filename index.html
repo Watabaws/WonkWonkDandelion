@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title> Hi</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+        <title> Hi</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
     </head>
     <body>
-		<div class="container">
-			<div class="row text-center"> <!-- Example of a row w/ three columns and the text is center aligned! -->
-				<div class="col">
-					<p>We set up a div row, with text-center, and are throwing in columns
-				</div>
-				<div class="col">
-					<h1>class = col</h1>
-				</div>
-				<div class="col">
-					<h1>class = col</h1>
-				</div>
-			</div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Here's <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A Cool</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Easy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Navbar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row text-center"> <!-- Example of a row w/ three columns and the text is center aligned! -->
+                <div class="col">
+                    <p>We set up a div row, with text-center, and are throwing in columns </p>
+                </div>
+                <div class="col">
+                    <h1>class = col</h1>
+                </div>
+                <div class="col">
+                    <h1>class = col</h1>
+                </div>
+            </div>
 
-			<br><br>
+            <br><br>
 
-			<div class="row text-center"> <!-- Example of a center aligned but only one item -->
-				<div class="col">
-					<p> In a div row, with text-center, this a div with class = col
-				</div>
-			</div>
+            <div class="row text-center"> <!-- Example of a center aligned but only one item -->
+                <div class="col">
+                    <p> In a div row, with text-center, this a div with class = col
+                </div>
+            </div>
 
-			<br><br>
+            <br><br>
 
-			<div class="row text-right"> <!-- Example of 2 right aligned columns -->
-				<div class="col-8">
-					Here we're specifying col-8, meaning we want this column to be in a 8:12 ratio. The row is text-right
-				</div>
+            <div class="row text-right"> <!-- Example of 2 right aligned columns -->
+                <div class="col-8">
+                    Here we're specifying col-8, meaning we want this column to be in a 8:12 ratio. The row is text-right
+                </div>
 
-				<div class="col-4">
-					This is col-4 (4:12 ratio)
-				</div>
-			</div>
+                <div class="col-4">
+                    This is col-4 (4:12 ratio)
+                </div>
+            </div>
 
-			<br><br>
+            <br><br>
 
-			<div class="row">
-				<table class="table">
-					<thead class="thead-dark">
-						<tr>
-							<th> # </th>
-							<th> This is a table! </th>
-							<th> In our thead, class="thead-dark" </th>
-							<th> Tables in bootstrap follow a (#/First/Last/User) format </th>
-							<!--<th> Meaning >= 4 columns! </th>-->
-						</tr>
-					</thead>
-					<tr>
-						<td class="table-active"> class = "table-active" </td>
-						<td class='table-primary'> class = "table-primary" </td>
-						<td class="table-secondary"> class="table-secondary" </td>
-						<td class="table-success"> class = "table-success" </td>
-					</tr>
-					<tr>
-						<td class="table-danger"> class = "table-danger" </td>
-						<td class="table-warning"> class = "table-warning" </td>
-						<td class="table-info"> class = "table-info" </td>
-						<td class="table-dark"> class = "table-dark" </td>
-					</tr>
-					<tr class = "bg-success">
-						<td> Switch "bg" for "table"  </td>
-						<td> and you get darker colors! </td>
-					</tr>
-				</table>
-			</div>
+            <div class="row">
+                <table class="table text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th> Hi there! </th>
+                            <th> This is a table! </th>
+                            <th> In our thead, class="thead-dark" </th>
+                            <!--<th> Meaning >= 4 columns! </th>-->
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="table-active"> class = "table-active" </td>
+                        <td class='table-primary'> class = "table-primary" </td>
+                        <td class="table-secondary"> class="table-secondary" </td>
+                    </tr>
+                    <tr>
+                        <td class="table-success"> class = "table-success" </td>
+                        <td class="table-danger"> class = "table-danger" </td>
+                        <td class="table-warning"> class = "table-warning" </td>
+                        <tr>
+                            <td class="table-info"> class = "table-info" </td>
+                            <td class="table-dark"> class = "table-dark" </td>
+                            <td class="table-light"> class = "table-light" </td>
+                        </tr>
+                        <tr class = "bg-success">
+                            <td> Switch "bg" for "table"  </td>
+                            <td> and you get darker colors! </td>
+                            <td> The columns are proportionally spaced (depending on content).</td>
+                        </tr>
+                </table>
+            </div>
 
 
     </body>
